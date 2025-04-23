@@ -35,7 +35,7 @@ const data = {
 const options = {
   plugins: {
     legend: {
-      display: false, // Hide default chart legend
+      display: false,
     },
     tooltip: {
       backgroundColor: "#18181b",
@@ -69,7 +69,7 @@ export default function ShareholdingPieChart() {
         </div>
       </div>
       <div className="flex-1 mt-6 md:mt-0 md:ml-8 w-full max-w-xs p-4">
-        <div className="grid grid-cols-2 gap-3">
+        <div className="bg-[#23272e] rounded-lg p-4 border border-emerald-800 grid grid-cols-1 gap-3">
           {shareholdingData.map((d, i) => (
             <div key={d.category} className="flex items-center gap-2">
               <span className="inline-block w-4 h-4 rounded-full" style={{ backgroundColor: COLORS[i] }}></span>
